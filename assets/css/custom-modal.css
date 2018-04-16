@@ -1,0 +1,158 @@
+:root {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	min-height: 500px;
+	background-color: #00EB44;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.modal-button {
+	margin: 21% 40%;
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: 1vmax;
+	overflow: hidden;
+	outline: none;
+	border: none;
+	background-color: #00EB44;
+	
+}
+.modal-button:hover {
+	color: black;
+}
+
+.wall {
+	width: 100%;
+	height:100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #43B900;
+	position: absolute;	
+	display: none;
+	z-index: 9999;
+	overflow-y: hidden;
+}
+
+.modal {
+	min-height: 50vh;
+	width: 40vw;
+	overflow: hidden;
+	box-sizing: border-box;
+	background-color: white;
+	margin: 10% auto 0;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px grey;
+	transition: all 0.3s ease;
+	transform: scale(0, 0);
+}
+
+.modal-header {
+	width: 100%;
+	height: 100%;
+	background-color: #3498DB;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+h1 {
+	font-weight: 1.4px;
+	font-family: "Playfair Display", serif;
+	padding-left: 1vw; 
+}
+
+.hider {
+	font-size: 1.5rem;
+	color: white;
+	padding-right: 1vw;
+	text-decoration: none
+}
+
+.hider:hover {
+	color: red;
+	transition: all 0.2s ease;
+}
+
+.modal-body {
+	font-family: "Playfair Display", serif;
+	padding: 1vh 3vw;
+	color: #333;
+	text-align: justify;
+	overflow-y: hidden; 
+	font-size: 1.1rem;
+	height: auto;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	h1 {
+		font-size: 1.1rem;
+	}
+
+	.modal-body {
+		font-size: 1rem;
+	}
+
+	.modal-button {
+		font-size: 1.5rem;
+	}
+
+	.modal {
+		min-height: 40vh;
+		width: 50vw;
+	
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	h1 {
+		font-size: 1rem;
+	}
+
+	.modal-body {
+		font-size: 0.9rem;
+	}
+
+	.modal-button {
+		font-size: 1.2rem;
+		
+	}
+
+	.modal {
+		min-height: 35vh;
+		width: 60vw;
+		
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

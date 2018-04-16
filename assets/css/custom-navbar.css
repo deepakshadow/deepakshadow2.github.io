@@ -1,0 +1,187 @@
+:root {
+	font-size: 16px;
+	font-family: "Poppins";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	width: 100%;
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: steelblue;
+}
+
+.logo {
+	font-size: 1.8rem;
+	padding: 1vmax;
+	color: white;
+	text-decoration: none;
+}
+
+.nav i {
+	color: white;
+	font-size: 1.8rem;
+	padding: 1vmax;
+	cursor: pointer;
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background-color: steelblue;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	box-shadow: 0 1px 10px  black;
+}
+
+.logo-head {
+	font-size: 1.8rem;
+	padding: 1vmax;
+	color: white;
+	text-decoration: none;
+	width: 20%;
+}
+
+ul {
+	width: 40%;
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+ul li {
+	display: block;
+	padding-top: 1vmin;
+}
+
+ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 1.1vmax;
+	display: flex;
+	font-size: 1.2rem
+}
+
+ul li a:hover {
+	background-color: skyblue;
+	transition: all 0.4s ease;
+}
+
+ul ul {
+	position: absolute;
+	min-width: 10vmax;
+	background-color: lightblue;
+	display: none;
+}
+
+ul ul li {
+	display: flex;
+	flex-direction: column;
+	color: skyblue;
+	background-color: #D2E5EE;
+}
+
+ul  li:hover ul {
+	display: block;
+	flex-direction: column;
+}
+
+ul li i {
+	 color: #292929;
+}
+
+form {
+	width: 40%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+form input {
+	margin: 1vmax;
+	border-radius: 5px;
+
+}
+
+form button {
+	outline-color: white;
+	margin: 1vmax;
+	border-radius: 5px;
+	background-color: white;
+	color: skyblue;
+}
+
+form button:hover {
+	background-color: skyblue;
+	color: white;
+}
+
+.disabled:hover{
+	background-color: steelblue;
+}
+
+@media screen and (max-width: 768px){
+
+	.nav {
+		display: flex;
+	}
+
+	nav {
+		display: none;
+		position: static;
+        background: #e3e3e3;
+
+	}
+
+	ul {
+		display: block;
+		font-size: 1.1rem;
+		width: 100%;
+	}
+
+	ul li a {
+		color: steelblue;
+	}
+	.logo-head {
+		display: none;
+	}
+
+	ul ul {
+		position: static;
+        background: #e3e3e3;
+	}
+
+	form {
+		padding-bottom: 1vmax;
+	}
+
+	form input,
+	form button {
+		padding: 1vmax;
+	}
+
+	.disabled:hover {
+		background-color: #e3e3e3;
+	}
+}
+
+
+
+
+
+
+
+
+

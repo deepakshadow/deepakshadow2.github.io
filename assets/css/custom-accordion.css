@@ -1,0 +1,96 @@
+/*  custom css file  */
+
+:root {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FF5733;
+}
+
+.container {
+	margin: 1% 8% 2% 8%;
+	height: 100%;
+	background-color: #FFD897; 
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+p {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+.accordion {
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	border: 1px solid #DBE1E1;
+}
+
+.card-header {
+	background-color: #F9E7BE;
+	padding: 2%;
+	font-size: 1.8rem;
+}
+
+.card-header a {
+	text-decoration: none;
+	color: black;
+}
+
+.card-header:hover {
+	background-color: #FF8300;
+	box-shadow: 0 2px 20px 3px #EA1750;
+	transition: all 0.2s ease;
+	color: white;
+	cursor: pointer;
+	transform: scale(1.02, 1.02);
+}
+
+.card-body {
+	padding: 3%;
+	font-size: 1.2rem;
+}
+p:hover {
+	color: #EBFF97;
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+	.card-header {
+	font-size: 1.5rem;
+	}
+
+	.card-body {
+		font-size: 1.1rem;
+	}
+
+	p {
+		font-size: 1.6rem;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+
+	.card-header {
+	font-size: 1.3rem;
+	}
+
+	.card-body {
+		font-size: 1rem;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+
+}
